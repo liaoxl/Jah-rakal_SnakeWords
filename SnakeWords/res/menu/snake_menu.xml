@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+		android:title="SpeedUp" 
+		android:id="@+id/speedup_item"
+		/>
+	<item 
+		android:title="SlowDown" 
+		android:id="@+id/slowdown_item" 
+		/>
+	<item 
+		android:title="StartGame" 
+		android:id="@+id/reviewwords_item" 
+		/>
+	<item 
+		android:title="Quit" 
+		android:id="@+id/snake_quit_item" 
+		/>
+</menu>

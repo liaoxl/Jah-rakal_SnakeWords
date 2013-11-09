@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/grass"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout 
+		android:id="@+id/start_layout"
+		android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="5px">
+	    
+	    <TextView
+			android:text="@string/moto_string"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="#ff8888ff"
+			android:textSize="24sp"
+			android:gravity="center" />
+			
+	    <LinearLayout
+	    	android:layout_marginTop="20dp"
+	    	android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	<TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="Choose a WordBook: "
+		    	android:textColor="#ff8888ff"
+		    	android:textSize="18sp"
+		    	/>
+	    	<Spinner
+		    	android:id="@+id/book_spinner"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    	android:layout_marginTop="20dp"
+	    	android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	<TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="Choose a list: "
+		    	android:textColor="#ff8888ff"
+		    	android:textSize="18sp"
+		    	/>
+	    	<Spinner
+		    	android:id="@+id/list_spinner"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    	android:layout_marginTop="50dp"
+	    	android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center_horizontal">
+			<Button
+				android:id ="@+id/start_button"
+				android:text ="    Start    "
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+			/>
+			
+			<Button
+				android:id ="@+id/help_button"
+				android:text ="    Help    "
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginLeft="10dp"
+			/>
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/help_layout"
+		android:padding="10dp"
+		android:orientation="vertical"
+		android:visibility="invisible"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		<TextView
+			android:id="@+id/help_textview"
+			android:text="@string/help_string"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ff000000"
+			android:textSize="16sp"
+			android:gravity="left" />
+		<Button
+			android:layout_marginLeft="10dp"
+			android:background="#ffb4eeb4"
+			android:id="@+id/back_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Back"
+			android:textSize="20sp"/>
+	</LinearLayout>
+</FrameLayout>
